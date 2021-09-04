@@ -39,6 +39,7 @@ var lenguajes = [
 
 var proyects = [
     "*[LM Roleplay]",
+    "*[Miners Monitor]",
     "*[Punch Time]",
     "*[Transparencer]",
     "*[Looker]",
@@ -56,6 +57,17 @@ var lmtitle = [
     "888____ /          Y888b   888 ~-_   '88_-~  888  '88___/  888-_88'  888  '88_-888   //",
     "                                                           888                     _//",
     "                                                           888       By JP"
+]
+
+var RavenminerStatusTitle = [
+    " *                                  *                                   ",
+    " (  `                               (  `                      )           ",
+    " )\))(   (            (   (         )\))(              (   ( /(      (    ",
+    "((_)()\  )\   (      ))\  )(   (   ((_)()\   (    (    )\  )\()) (   )(   ",
+    "(_()((_)((_)  )\ )  /((_)(()\  )\  (_()((_)  )\   )\ )((_)(_))/  )\ (()\  ",
+    "|  \/  | (_) _(_/( (_))   ((_)((_) |  \/  | ((_) _(_/( (_)| |_  ((_) ((_) ",
+    "| |\/| | | || ' \))/ -_) | '_|(_-< | |\/| |/ _ \| ' \))| ||  _|/ _ \| '_| ",
+    "|_|  |_| |_||_||_| \___| |_|  /__/ |_|  |_|\___/|_||_| |_| \__|\___/|_| By JP"                                                               
 ]
 
 var lminfo = [
@@ -78,6 +90,17 @@ var lminfo = [
     "Images:                "
 ]
 
+var RavenminerStatusInfo = [
+    "Miners Monitor         <button onclick='RavenminerStatus()' class='b all'>[Ir]</button>",
+    "Language:              Html & js",
+    "Integrations:          RavenMiners api",
+    "Link:                  https://juanpe500.github.io/RavenminerStatus/",
+    "<br>",
+    "Summary:               Simple web interface with added features for basic ravenminer pool, with this",
+    "                       notification sounds can be setted, as many extra currencies convertions.",
+    "Images:                "
+]
+
 const sleepNow = (delay) => new Promise ((resolve) => setTimeout(resolve, delay))
 
 function openCV(){
@@ -86,6 +109,10 @@ function openCV(){
 
 function Conectarse(){
     window.open('mtasa://144.217.120.177:22003',"_self")
+}
+
+function RavenminerStatus(){
+    window.open('https://juanpe500.github.io/RavenminerStatus/',"_self")
 }
 
 async function PrintTable(div,table,stringOpen,StringClose,waitTime){
@@ -101,6 +128,10 @@ async function openProyect(x){
     if (x==0){
         await PrintTable(ProyectTab,lmtitle,"<p class='all' style='white-space: pre;'>","</p>",20)
         await PrintTable(ProyectTab,lminfo,"<p class='all' style='white-space: pre;'>","</p>",20)
+        ProyectTab.innerHTML = ProyectTab.innerHTML + ""
+    }else if (x==1){
+        await PrintTable(ProyectTab,RavenminerStatusTitle,"<p class='all' style='white-space: pre;'>","</p>",20)
+        await PrintTable(ProyectTab,RavenminerStatusInfo,"<p class='all' style='white-space: pre;'>","</p>",20)
         ProyectTab.innerHTML = ProyectTab.innerHTML + ""
     }
 }
