@@ -60,14 +60,14 @@ var lmtitle = [
 ]
 
 var RavenminerStatusTitle = [
-    " *                                  *                                   ",
-    " (  `                               (  `                      )           ",
-    " )\))(   (            (   (         )\))(              (   ( /(      (    ",
-    "((_)()\  )\   (      ))\  )(   (   ((_)()\   (    (    )\  )\()) (   )(   ",
-    "(_()((_)((_)  )\ )  /((_)(()\  )\  (_()((_)  )\   )\ )((_)(_))/  )\ (()\  ",
-    "|  \/  | (_) _(_/( (_))   ((_)((_) |  \/  | ((_) _(_/( (_)| |_  ((_) ((_) ",
-    "| |\/| | | || ' \))/ -_) | '_|(_-< | |\/| |/ _ \| ' \))| ||  _|/ _ \| '_| ",
-    "|_|  |_| |_||_||_| \___| |_|  /__/ |_|  |_|\___/|_||_| |_| \__|\___/|_| By JP"                                                               
+    ",,                                                                               ,,                                    By JP ",
+    "`7MMM.     ,MMF'  db                                          `7MMM.     ,MMF'                     db   mm                   ",
+    "  MMMb    dPMM                                                  MMMb    dPMM                            MM                   ",
+    "  M YM   ,M MM  `7MM  `7MMpMMMb.  .gP'Ya `7Mb,od8 ,pP'Ybd       M YM   ,M MM  ,pW'Wq.`7MMpMMMb.  `7MM mmMMmm ,pW'Wq.`7Mb,od8 ",
+    "  M  Mb  M' MM    MM    MM    MM ,M'   Yb  MM' '' 8I   `'       M  Mb  M' MM 6W'   `Wb MM    MM    MM   MM  6W'   `Wb MM' '' ",
+    "  M  YM.P'  MM    MM    MM    MM 8M''''''  MM     `YMMMa.       M  YM.P'  MM 8M     M8 MM    MM    MM   MM  8M     M8 MM     ",
+    "  M  `YM'   MM    MM    MM    MM YM.    ,  MM     L.   I8       M  `YM'   MM YA.   ,A9 MM    MM    MM   MM  YA.   ,A9 MM     ",
+    ".JML. `'  .JMML..JMML..JMML  JMML.`Mbmmd'.JMML.   M9mmmP'     .JML. `'  .JMML.`Ybmd9'.JMML  JMML..JMML. `Mbmo`Ybmd9'.JMML.   "                                                                                                                                                                                
 ]
 
 var lminfo = [
@@ -112,7 +112,7 @@ function Conectarse(){
 }
 
 function RavenminerStatus(){
-    window.open('https://juanpe500.github.io/RavenminerStatus/',"_self")
+    window.open('https://juanpe500.github.io/RavenminerStatus/')
 }
 
 async function PrintTable(div,table,stringOpen,StringClose,waitTime){
