@@ -67,7 +67,8 @@ var RavenminerStatusTitle = [
     "  M  Mb  M' MM    MM    MM    MM ,M'   Yb  MM' '' 8I   `'       M  Mb  M' MM 6W'   `Wb MM    MM    MM   MM  6W'   `Wb MM' '' ",
     "  M  YM.P'  MM    MM    MM    MM 8M''''''  MM     `YMMMa.       M  YM.P'  MM 8M     M8 MM    MM    MM   MM  8M     M8 MM     ",
     "  M  `YM'   MM    MM    MM    MM YM.    ,  MM     L.   I8       M  `YM'   MM YA.   ,A9 MM    MM    MM   MM  YA.   ,A9 MM     ",
-    ".JML. `'  .JMML..JMML..JMML  JMML.`Mbmmd'.JMML.   M9mmmP'     .JML. `'  .JMML.`Ybmd9'.JMML  JMML..JMML. `Mbmo`Ybmd9'.JMML.   "                                                                                                                                                                                
+    ".JML. `'  .JMML..JMML..JMML  JMML.`Mbmmd'.JMML.   M9mmmP'     .JML. `'  .JMML.`Ybmd9'.JMML  JMML..JMML. `Mbmo`Ybmd9'.JMML.   ",
+    " ",
 ]
 
 var lminfo = [
@@ -141,6 +142,10 @@ async function ListLenguageProyects(x){
     if (x==4){
         await PrintTable(ProyectTab,lmtitle,"<p class='all' style='white-space: pre;'>","</p>",20)
         await PrintTable(ProyectTab,lminfo,"<p class='all' style='white-space: pre;'>","</p>",20)
+        ProyectTab.innerHTML = ProyectTab.innerHTML + ""
+    }else if (x==3){
+        await PrintTable(ProyectTab,RavenminerStatusTitle,"<p class='all' style='white-space: pre;'>","</p>",20)
+        await PrintTable(ProyectTab,RavenminerStatusInfo,"<p class='all' style='white-space: pre;'>","</p>",20)
         ProyectTab.innerHTML = ProyectTab.innerHTML + ""
     }
 }
